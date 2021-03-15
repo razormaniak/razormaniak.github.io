@@ -95,11 +95,18 @@ style="
   
   
   <img src="flemmaGuide.png" style="border:5px solid black;"></img>
-  <img src="flemmaGuide.png" style="border:5px solid black;"></img>
-  <img src="flemmaGuide.png" style="border:5px solid black;"></img>
-  <img src="flemmaGuide.png" style="border:5px solid black;"></img>
-  <img src="flemmaGuide.png" style="border:5px solid black;"></img>
-  <img src="flemmaGuide.png" style="border:5px solid black;"></img>
+  <img src="lunaGuide.png" style="border:5px solid black;"></img>
+  
+
+  
+
+  
+  <img src="hhGuide.png" style="border:5px solid black;position:relative"></img>
+  
+  
+  
+  <img src="lilyGif.gif" style="border:5px solid black;position:relative;width:400px;height:280px;z-index:1"></img>
+  <img id="lily"onmouseover="toGifOff()" onmouseout="toGifOn()" src="lilyGuide.png" style="border:5px solid black;width:400px;height:280px;position:absolute;margin-left:-410px;z-index:2"></img>
   
   <br>
   Content
@@ -109,7 +116,16 @@ style="
   </div>
  
 
-
+<script>
+function toGifOff()
+{
+document.getElementById("lily").style.opacity = 0;
+}
+function toGifOn()
+{
+document.getElementById("lily").style.opacity = 1;
+}
+</script>
 
 
 </body>
